@@ -1,0 +1,19 @@
+{
+    "/ram":{
+        "GET":[{
+            "query_string":{"a":"10"},
+            "response":"asdf"
+        },
+        {
+            "query_string":{"a":"11"},
+            "response": "this is bad"
+        }
+        
+    ],
+        "POST": [{
+            "query_string":{},
+            "post_data":"",
+            "response":""
+        }]
+    }
+}

@@ -1,10 +1,10 @@
 from flask import Flask, request
-
+import os
 import json
 
 app = Flask(__name__)
-
-with open('output.json', 'r') as f:
+filename = os.environ.get('mock-file-data')
+with open(filename, 'r') as f:
     url_output_map = json.load(f)
 
 def base_response_to_request():
